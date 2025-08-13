@@ -4,66 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowDots - O Jogo de Ligar os Pontos</title>
-    <!-- ✅ NOVO: Ícone na aba do navegador -->
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        // ✅ CONFIGURAÇÃO DAS CORES DO TEMA DO APP NO TAILWIND
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-bg': '#161A25',
+                        'neon-surface': '#242A3D',
+                        'neon-primary': '#26C6DA',
+                        'neon-accent': '#D03D88',
+                        'neon-text': '#EAEAEA',
+                        'neon-text-secondary': '#A0A0A0',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         .gradient-text {
-            background: linear-gradient(to right, #26c6da, #ec407a);
+            /* ✅ GRADIENTE ATUALIZADO COM AS CORES DO TEMA */
+            background: linear-gradient(to right, #26C6DA, #D03D88);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white antialiased">
+<body class="bg-neon-bg text-neon-text antialiased">
 
-    <!-- Header -->
     <header class="container mx-auto px-6 py-12 text-center">
-        <!-- ✅ NOVO: Ícone do app adicionado -->
         <img src="icon.png" alt="Ícone do FlowDots" class="w-24 h-24 mx-auto mb-6 rounded-3xl shadow-lg">
         <h1 class="text-5xl md:text-7xl font-black gradient-text">FlowDots</h1>
-        <p class="mt-4 text-lg md:text-xl text-gray-300">Conecte os pontos, preencha o tabuleiro. Um desafio para sua mente.</p>
+        <p class="mt-4 text-lg md:text-xl text-neon-text-secondary">Conecte os pontos, preencha o tabuleiro. Um desafio para sua mente.</p>
         <div class="mt-8">
-            <a href="https://play.google.com/store/apps/details?id=SEU.PACOTE.AQUI" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
+            <a href="https://play.google.com/store/apps/details?id=net.glaucomv.flowdots" class="bg-neon-primary hover:bg-opacity-80 text-black font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
                 Baixe na Google Play
             </a>
         </div>
     </header>
 
-    <!-- Seção de Features -->
     <main class="container mx-auto px-6 py-16">
         <div class="grid md:grid-cols-3 gap-12 text-center">
-            <!-- Feature 1 -->
-            <div class="bg-gray-800 p-8 rounded-xl">
-                <div class="text-4xl text-cyan-400 mb-4">🧠</div>
+            <div class="bg-neon-surface p-8 rounded-xl border border-gray-700">
+                <div class="text-4xl text-neon-primary mb-4">🧠</div>
                 <h3 class="text-2xl font-bold mb-2">Desafie sua Lógica</h3>
-                <p class="text-gray-400">Centenas de níveis, do fácil ao expert, para testar suas habilidades de resolução de quebra-cabeças.</p>
+                <p class="text-neon-text-secondary">Centenas de níveis, do fácil ao expert, para testar suas habilidades de resolução de quebra-cabeças.</p>
             </div>
-            <!-- Feature 2 -->
-            <div class="bg-gray-800 p-8 rounded-xl">
-                <div class="text-4xl text-pink-400 mb-4">🎨</div>
+            <div class="bg-neon-surface p-8 rounded-xl border border-gray-700">
+                <div class="text-4xl text-neon-accent mb-4">🎨</div>
                 <h3 class="text-2xl font-bold mb-2">Desafios Temáticos</h3>
-                <p class="text-gray-400">Níveis especiais com desenhos e temas de datas comemorativas para manter o jogo sempre novo e divertido.</p>
+                <p class="text-neon-text-secondary">Níveis especiais com desenhos e temas de datas comemorativas para manter o jogo sempre novo e divertido.</p>
             </div>
-            <!-- Feature 3 -->
-            <div class="bg-gray-800 p-8 rounded-xl">
+            <div class="bg-neon-surface p-8 rounded-xl border border-gray-700">
                 <div class="text-4xl text-amber-400 mb-4">✨</div>
                 <h3 class="text-2xl font-bold mb-2">Visual Minimalista</h3>
-                <p class="text-gray-400">Uma experiência de jogo limpa e relaxante, com cores vibrantes e animações suaves.</p>
+                <p class="text-neon-text-secondary">Uma experiência de jogo limpa e relaxante, com cores vibrantes e animações suaves.</p>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-8 px-6 border-t border-gray-800">
-        <p class="text-gray-500">&copy; 2025 FlowDots. Todos os direitos reservados.</p>
-        <a href="privacy_policy.html" class="text-cyan-400 hover:text-cyan-300 mt-2 inline-block">
+    <footer class="text-center py-8 px-6 border-t border-neon-surface">
+        <p class="text-gray-500">&copy; 2025 ByteFlow Studios. Todos os direitos reservados.</p>
+        <a href="privacy_policy.html" class="text-neon-primary hover:text-opacity-80 mt-2 inline-block">
             Política de Privacidade
         </a>
     </footer>
