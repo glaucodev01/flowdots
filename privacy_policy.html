@@ -4,39 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - FlowDots</title>
+    <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // ✅ CONFIGURAÇÃO DAS CORES DO TEMA DO APP NO TAILWIND
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-bg': '#161A25',
+                        'neon-surface': '#242A3D',
+                        'neon-primary': '#26C6DA',
+                        'neon-text': '#EAEAEA',
+                        'neon-text-secondary': '#A0A0A0',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         .policy-content h2 {
             font-size: 1.5rem;
             font-weight: 700;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            border-bottom: 1px solid #4a5568;
+            /* ✅ COR DA BORDA ATUALIZADA */
+            border-bottom: 1px solid #3A415A;
             padding-bottom: 0.5rem;
+            color: #EAEAEA; /* Cor do título h2 */
         }
         .policy-content p {
             margin-bottom: 1rem;
             line-height: 1.75;
         }
         .policy-content a {
-            color: #26c6da;
+            /* ✅ COR DO LINK ATUALIZADA */
+            color: #26C6DA;
             text-decoration: underline;
+        }
+        .policy-content ul {
+            list-style-position: inside;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        .policy-content li {
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-300 antialiased">
+<body class="bg-neon-bg text-neon-text-secondary antialiased">
 
     <div class="container mx-auto px-6 py-12 max-w-4xl">
-        <h1 class="text-4xl font-bold text-white text-center mb-8">Política de Privacidade do FlowDots</h1>
+        <h1 class="text-4xl font-bold text-neon-text text-center mb-8">Política de Privacidade do FlowDots</h1>
         
-        <div class="bg-gray-800 p-8 md:p-12 rounded-xl policy-content">
-            <p><strong>Última atualização:</strong> 08 de agosto de 2025</p>
+        <div class="bg-neon-surface p-8 md:p-12 rounded-xl policy-content border border-gray-700">
+            <p><strong>Última atualização:</strong> 13 de agosto de 2025</p>
 
             <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como o aplicativo FlowDots ("nós", "nosso" ou "o aplicativo") lida com suas informações.</p>
 
@@ -44,17 +72,17 @@
             <p>O FlowDots **não coleta, armazena ou compartilha nenhuma informação de identificação pessoal** dos seus usuários. O aplicativo foi projetado para ser uma experiência de jogo offline e autônoma.</p>
             <p>As únicas informações que o aplicativo armazena são salvas localmente no seu próprio dispositivo. Essas informações incluem:</p>
             <ul>
-                <li>- O seu progresso no jogo (quais níveis foram concluídos).</li>
-                <li>- As suas configurações de jogo (como música, efeitos sonoros e vibração).</li>
+                <li>O seu progresso no jogo (quais níveis foram concluídos).</li>
+                <li>As suas configurações de jogo (como música, efeitos sonoros e vibração).</li>
             </ul>
             <p>Esses dados nunca saem do seu dispositivo e são usados exclusivamente para garantir que você possa continuar seu progresso e manter suas preferências entre as sessões de jogo.</p>
 
             <h2>Permissões do Aplicativo</h2>
             <p>O FlowDots solicita a permissão de **Vibração** (VIBRATE) no seu dispositivo. Esta permissão é usada unicamente para fornecer feedback tátil durante o jogo, como quando ocorre um erro, e pode ser desativada a qualquer momento nas configurações do aplicativo.</p>
 
-            <h2>Serviços de Terceiros</h2>
-            <p>O FlowDots **não utiliza** serviços de terceiros, como anúncios (ads), análise de dados (analytics) ou integrações com redes sociais, que possam coletar informações sobre você.</p>
-
+            <h2>Serviços de Terceiros e Publicidade</h2>
+            <p>O FlowDots utiliza o serviço Google AdMob para exibir anúncios. Para fornecer anúncios relevantes, o AdMob pode coletar e usar o ID de Publicidade do seu dispositivo, de acordo com as políticas do Google. Nós não temos acesso a esse ID nem o armazenamos. Você pode gerenciar suas preferências de anúncios e redefinir seu ID de Publicidade nas configurações do seu dispositivo Android.</p>
+            
             <h2>Privacidade das Crianças</h2>
             <p>Nosso aplicativo não se destina a coletar intencionalmente informações de crianças menores de 13 anos. Como não coletamos nenhuma informação de identificação pessoal, estamos em conformidade com o Children's Online Privacy Protection Act (COPPA).</p>
 
@@ -66,7 +94,7 @@
         </div>
 
         <div class="text-center mt-8">
-            <a href="index.html" class="text-cyan-400 hover:text-cyan-300">
+            <a href="index.html" class="text-neon-primary hover:text-opacity-80">
                 &larr; Voltar para a página inicial
             </a>
         </div>
