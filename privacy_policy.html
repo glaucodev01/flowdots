@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script>
-        // ✅ CONFIGURAÇÃO DAS CORES DO TEMA DO APP NO TAILWIND
         tailwind.config = {
             theme: {
                 extend: {
@@ -26,36 +25,15 @@
         }
     </script>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
+        body { font-family: 'Poppins', sans-serif; }
         .policy-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            /* ✅ COR DA BORDA ATUALIZADA */
-            border-bottom: 1px solid #3A415A;
-            padding-bottom: 0.5rem;
-            color: #EAEAEA; /* Cor do título h2 */
+            font-size: 1.5rem; font-weight: 700; margin-top: 2rem;
+            margin-bottom: 1rem; border-bottom: 1px solid #3A415A;
+            padding-bottom: 0.5rem; color: #EAEAEA;
         }
-        .policy-content p {
-            margin-bottom: 1rem;
-            line-height: 1.75;
-        }
-        .policy-content a {
-            /* ✅ COR DO LINK ATUALIZADA */
-            color: #26C6DA;
-            text-decoration: underline;
-        }
-        .policy-content ul {
-            list-style-position: inside;
-            padding-left: 1rem;
-            margin-bottom: 1rem;
-        }
-        .policy-content li {
-            margin-bottom: 0.5rem;
-        }
+        .policy-content p, .policy-content li { margin-bottom: 1rem; line-height: 1.75; }
+        .policy-content a { color: #26C6DA; text-decoration: underline; }
+        .policy-content ul { list-style-type: disc; list-style-position: inside; }
     </style>
 </head>
 <body class="bg-neon-bg text-neon-text-secondary antialiased">
@@ -64,33 +42,42 @@
         <h1 class="text-4xl font-bold text-neon-text text-center mb-8">Política de Privacidade do FlowDots</h1>
         
         <div class="bg-neon-surface p-8 md:p-12 rounded-xl policy-content border border-gray-700">
-            <p><strong>Última atualização:</strong> 13 de agosto de 2025</p>
+            <p><strong>Última atualização:</strong> 14 de agosto de 2025</p>
 
-            <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como o aplicativo FlowDots ("nós", "nosso" ou "o aplicativo") lida com suas informações.</p>
+            <p>A sua privacidade é uma prioridade para a ByteFlow Studios. Esta Política de Privacidade explica quais informações o aplicativo FlowDots coleta (e, mais importante, não coleta) e como os serviços de terceiros funcionam dentro do nosso jogo.</p>
 
-            <h2>Coleta e Uso de Informações</h2>
-            <p>O FlowDots **não coleta, armazena ou compartilha nenhuma informação de identificação pessoal** dos seus usuários. O aplicativo foi projetado para ser uma experiência de jogo offline e autônoma.</p>
-            <p>As únicas informações que o aplicativo armazena são salvas localmente no seu próprio dispositivo. Essas informações incluem:</p>
+            <h2>Dados Coletados por FlowDots</h2>
+            <p>O FlowDots foi projetado para ser uma experiência de jogo autônoma. Nós **não coletamos, armazenamos ou compartilhamos nenhuma informação de identificação pessoal** sua. Os únicos dados que o aplicativo gerencia são salvos exclusivamente no seu dispositivo:</p>
             <ul>
-                <li>O seu progresso no jogo (quais níveis foram concluídos).</li>
-                <li>As suas configurações de jogo (como música, efeitos sonoros e vibração).</li>
+                <li>Seu progresso de jogo (níveis concluídos e progresso de conquistas).</li>
+                <li>Suas configurações de preferência (música, som e vibração).</li>
+                <li>Seu status de compra (se você adquiriu a versão sem anúncios).</li>
             </ul>
-            <p>Esses dados nunca saem do seu dispositivo e são usados exclusivamente para garantir que você possa continuar seu progresso e manter suas preferências entre as sessões de jogo.</p>
+            <p>Esses dados são essenciais para o funcionamento do jogo e nunca deixam o seu dispositivo.</p>
+            
+            <h2>Serviços de Terceiros, Publicidade e Compras</h2>
+            <p>Para financiar o desenvolvimento e manter o jogo gratuito, utilizamos serviços fornecidos pelo Google. É importante entender o papel deles:</p>
+            <ul>
+                <li><strong>Google AdMob:</strong> Utilizamos o Google AdMob para exibir anúncios. Para fornecer anúncios que possam ser relevantes para você, o AdMob utiliza o ID de Publicidade do seu dispositivo. Nós não temos acesso direto a esse ID. Você pode gerenciar suas preferências de anúncios e redefinir seu ID de Publicidade nas configurações do seu dispositivo. Para mais informações, consulte a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</li>
+                <li><strong>Google Play Billing:</strong> O FlowDots oferece uma compra única no aplicativo ("Remover Anúncios"). Todas as transações são processadas de forma segura pela plataforma Google Play Billing. Nós não coletamos nem temos acesso a nenhuma informação de pagamento sua, como dados de cartão de crédito.</li>
+            </ul>
 
             <h2>Permissões do Aplicativo</h2>
-            <p>O FlowDots solicita a permissão de **Vibração** (VIBRATE) no seu dispositivo. Esta permissão é usada unicamente para fornecer feedback tátil durante o jogo, como quando ocorre um erro, e pode ser desativada a qualquer momento nas configurações do aplicativo.</p>
+            <p>Para funcionar corretamente, o FlowDots solicita as seguintes permissões:</p>
+            <ul>
+                <li><strong>INTERNET:</strong> Necessária para carregar anúncios e processar compras no aplicativo através dos serviços do Google.</li>
+                <li><strong>VIBRATE (Vibração):</strong> Usada unicamente para fornecer feedback tátil durante o jogo. Pode ser desativada nas configurações.</li>
+                <li><strong>AD_ID (ID de Publicidade):</strong> Requerida pelo Google para o funcionamento do sistema de anúncios em versões recentes do Android.</li>
+            </ul>
 
-            <h2>Serviços de Terceiros e Publicidade</h2>
-            <p>O FlowDots utiliza o serviço Google AdMob para exibir anúncios. Para fornecer anúncios relevantes, o AdMob pode coletar e usar o ID de Publicidade do seu dispositivo, de acordo com as políticas do Google. Nós não temos acesso a esse ID nem o armazenamos. Você pode gerenciar suas preferências de anúncios e redefinir seu ID de Publicidade nas configurações do seu dispositivo Android.</p>
-            
             <h2>Privacidade das Crianças</h2>
-            <p>Nosso aplicativo não se destina a coletar intencionalmente informações de crianças menores de 13 anos. Como não coletamos nenhuma informação de identificação pessoal, estamos em conformidade com o Children's Online Privacy Protection Act (COPPA).</p>
+            <p>O FlowDots não se destina a crianças menores de 13 anos e não coletamos intencionalmente nenhuma informação de identificação pessoal. Nosso uso de serviços de terceiros está em conformidade com as políticas aplicáveis, incluindo a Lei de Proteção à Privacidade Online das Crianças (COPPA).</p>
 
             <h2>Alterações a Esta Política de Privacidade</h2>
-            <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações, publicando a nova Política de Privacidade nesta página. Recomenda-se que você revise esta Política de Privacidade periodicamente para quaisquer alterações.</p>
+            <p>Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova versão nesta página e atualizando a data de "Última atualização".</g>
 
             <h2>Contato</h2>
-            <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, pode entrar em contato conosco através do e-mail: <strong><a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></strong></p>
+            <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco pelo e-mail: <strong><a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></strong></p>
         </div>
 
         <div class="text-center mt-8">
