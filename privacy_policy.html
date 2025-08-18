@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - FlowDots</title>
+    <title>Política de Privacidade e Termos - FlowDots</title>
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,57 +27,70 @@
     <style>
         body { font-family: 'Poppins', sans-serif; }
         .policy-content h2 {
-            font-size: 1.5rem; font-weight: 700; margin-top: 2rem;
+            font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem;
             margin-bottom: 1rem; border-bottom: 1px solid #3A415A;
             padding-bottom: 0.5rem; color: #EAEAEA;
         }
         .policy-content p, .policy-content li { margin-bottom: 1rem; line-height: 1.75; }
         .policy-content a { color: #26C6DA; text-decoration: underline; }
         .policy-content ul { list-style-type: disc; list-style-position: inside; }
+        .policy-content strong { color: #EAEAEA; }
     </style>
 </head>
 <body class="bg-neon-bg text-neon-text-secondary antialiased">
 
     <div class="container mx-auto px-6 py-12 max-w-4xl">
-        <h1 class="text-4xl font-bold text-neon-text text-center mb-8">Política de Privacidade do FlowDots</h1>
+        <h1 class="text-4xl font-bold text-neon-text text-center mb-8">Política de Privacidade e Termos de Uso do FlowDots</h1>
         
         <div class="bg-neon-surface p-8 md:p-12 rounded-xl policy-content border border-gray-700">
-            <p><strong>Última atualização:</strong> 14 de agosto de 2025</p>
+            <p><strong>Última atualização:</strong> 18 de agosto de 2025</p>
 
-            <p>A sua privacidade é uma prioridade para a ByteFlow Studios. Esta Política de Privacidade explica quais informações o aplicativo FlowDots coleta (e, mais importante, não coleta) e como os serviços de terceiros funcionam dentro do nosso jogo.</p>
+            <p>Sua privacidade e a transparência sobre como o FlowDots funciona são prioridades para nós. Este documento explica quais informações coletamos, como as utilizamos e quais são os termos que você aceita ao usar os recursos do nosso aplicativo, especialmente as funcionalidades da comunidade.</p>
 
-            <h2>Dados Coletados por FlowDots</h2>
-            <p>O FlowDots foi projetado para ser uma experiência de jogo autônoma. Nós **não coletamos, armazenamos ou compartilhamos nenhuma informação de identificação pessoal** sua. Os únicos dados que o aplicativo gerencia são salvos exclusivamente no seu dispositivo:</p>
+            <h2>Dados que Coletamos</h2>
+            <p>O FlowDots oferece duas experiências: offline e online (Comunidade).</p>
+            <p><strong>Para a experiência offline:</strong></p>
+            <p>Nós não coletamos nenhuma informação de identificação pessoal. Os únicos dados gerenciados são salvos exclusivamente no seu dispositivo e nunca são enviados para nós:</p>
             <ul>
-                <li>Seu progresso de jogo (níveis concluídos e progresso de conquistas).</li>
+                <li>Seu progresso de jogo (níveis concluídos, conquistas, inventário de dicas/diamantes).</li>
                 <li>Suas configurações de preferência (música, som e vibração).</li>
-                <li>Seu status de compra (se você adquiriu a versão sem anúncios).</li>
-            </ul>
-            <p>Esses dados são essenciais para o funcionamento do jogo e nunca deixam o seu dispositivo.</p>
-            
-            <h2>Serviços de Terceiros, Publicidade e Compras</h2>
-            <p>Para financiar o desenvolvimento e manter o jogo gratuito, utilizamos serviços fornecidos pelo Google. É importante entender o papel deles:</p>
-            <ul>
-                <li><strong>Google AdMob:</strong> Utilizamos o Google AdMob para exibir anúncios. Para fornecer anúncios que possam ser relevantes para você, o AdMob utiliza o ID de Publicidade do seu dispositivo. Nós não temos acesso direto a esse ID. Você pode gerenciar suas preferências de anúncios e redefinir seu ID de Publicidade nas configurações do seu dispositivo. Para mais informações, consulte a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</li>
-                <li><strong>Google Play Billing:</strong> O FlowDots oferece uma compra única no aplicativo ("Remover Anúncios"). Todas as transações são processadas de forma segura pela plataforma Google Play Billing. Nós não coletamos nem temos acesso a nenhuma informação de pagamento sua, como dados de cartão de crédito.</li>
             </ul>
 
-            <h2>Permissões do Aplicativo</h2>
-            <p>Para funcionar corretamente, o FlowDots solicita as seguintes permissões:</p>
+            <p><strong>Para a experiência online (Recursos da Comunidade):</strong></p>
+            <p>Para acessar o Estúdio Criativo, jogar níveis da comunidade e participar dos placares de líderes, é necessário criar uma conta. Ao fazer isso, coletamos e armazenamos as seguintes informações usando os serviços do Firebase:</p>
             <ul>
-                <li><strong>INTERNET:</strong> Necessária para carregar anúncios e processar compras no aplicativo através dos serviços do Google.</li>
-                <li><strong>VIBRATE (Vibração):</strong> Usada unicamente para fornecer feedback tátil durante o jogo. Pode ser desativada nas configurações.</li>
-                <li><strong>AD_ID (ID de Publicidade):</strong> Requerida pelo Google para o funcionamento do sistema de anúncios em versões recentes do Android.</li>
+                <li><strong>Informações da sua Conta Google:</strong> Utilizamos o Firebase Authentication para login, que nos dá acesso ao seu nome, endereço de e-mail e foto de perfil, usados para identificar sua conta.</li>
+                <li><strong>ID de Usuário (UID):</strong> Um identificador único para sua conta, fornecido pelo Firebase.</li>
+                <li><strong>Nome de Usuário (Nick):</strong> O nome público que você escolhe para ser exibido no jogo.</li>
+                <li><strong>Dados de Atividade:</strong> Níveis que você criou, seus favoritos, seus recordes e progresso nos placares de líderes.</li>
             </ul>
+            <p>Esses dados são essenciais para o funcionamento dos recursos online, como atribuir a autoria dos níveis que você cria e exibir seu nome nos rankings.</p>
+            
+            <h2>Conteúdo Gerado pelo Usuário (Níveis da Comunidade)</h2>
+            <p>O FlowDots permite que você crie e compartilhe seus próprios níveis ("Conteúdo Gerado pelo Usuário" ou "CGU"). Ao publicar um nível no Hub da Comunidade, você concorda com os seguintes termos:</p>
+            <ul>
+                <li><strong>Licença de Uso:</strong> Você mantém os direitos sobre sua criação. No entanto, ao publicá-la, você concede ao FlowDots (ByteFlow Studios) uma licença perpétua, irrevogável, mundial, não exclusiva e isenta de royalties para usar, hospedar, exibir, modificar, distribuir e reproduzir seu nível dentro do ecossistema do FlowDots e para fins promocionais do jogo. Isso nos permite mostrar seu nível para outros jogadores.</li>
+                <li><strong>Moderação e Promoção:</strong> Reservamo-nos o direito de revisar, moderar ou remover qualquer conteúdo que viole nossos padrões da comunidade. Os níveis que se destacam pela qualidade e popularidade podem ser "promovidos" por nossa equipe, ganhando maior visibilidade no jogo.</li>
+                <li><strong>Política de Exclusão:</strong> Você pode remover os níveis que publicou a qualquer momento através da tela "Minhas Contribuições". No entanto, para garantir a estabilidade e a consistência da experiência para todos os jogadores, os níveis que foram **promovidos** pela equipe FlowDots não poderão ser excluídos por você.</li>
+            </ul>
+
+            <h2>Serviços de Terceiros</h2>
+            <p>Para operar, o FlowDots utiliza serviços de terceiros confiáveis, principalmente do Google:</p>
+            <ul>
+                <li><strong>Firebase (Authentication e Firestore):</strong> Usado para gerenciar as contas de usuário e armazenar os dados da comunidade (perfis, níveis, etc.) de forma segura.</li>
+                <li><strong>Google AdMob:</strong> Para exibir anúncios na versão gratuita do jogo.</li>
+                <li><strong>Google Play Billing:</strong> Para processar compras no aplicativo de forma segura.</li>
+            </ul>
+            <p>Esses serviços possuem suas próprias políticas de privacidade. Recomendamos a leitura da <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</p>
 
             <h2>Privacidade das Crianças</h2>
-            <p>O FlowDots não se destina a crianças menores de 13 anos e não coletamos intencionalmente nenhuma informação de identificação pessoal. Nosso uso de serviços de terceiros está em conformidade com as políticas aplicáveis, incluindo a Lei de Proteção à Privacidade Online das Crianças (COPPA).</p>
+            <p>Os recursos online do FlowDots não são destinados a crianças menores de 13 anos. A criação de contas é restrita a usuários com idade para consentir com o processamento de seus dados pessoais em seu país de residência.</p>
 
-            <h2>Alterações a Esta Política de Privacidade</h2>
-            <p>Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova versão nesta página e atualizando a data de "Última atualização".</g>
+            <h2>Alterações a Esta Política e Termos</h2>
+            <p>Podemos atualizar este documento periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova versão nesta página e atualizando a data de "Última atualização".</g>
 
             <h2>Contato</h2>
-            <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco pelo e-mail: <strong><a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></strong></p>
+            <p>Se você tiver alguma dúvida sobre esta Política ou Termos, entre em contato conosco pelo e-mail: <strong><a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></strong></p>
         </div>
 
         <div class="text-center mt-8">
