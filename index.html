@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowDots - O Jogo de Ligar os Pontos</title>
+    <title>Política de Privacidade e Termos - FlowDots</title>
     <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script>
-        // ✅ CONFIGURAÇÃO DAS CORES DO TEMA DO APP NO TAILWIND
         tailwind.config = {
             theme: {
                 extend: {
@@ -18,7 +17,6 @@
                         'neon-bg': '#161A25',
                         'neon-surface': '#242A3D',
                         'neon-primary': '#26C6DA',
-                        'neon-accent': '#D03D88',
                         'neon-text': '#EAEAEA',
                         'neon-text-secondary': '#A0A0A0',
                     }
@@ -27,56 +25,80 @@
         }
     </script>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+        body { font-family: 'Poppins', sans-serif; }
+        .policy-content h2 {
+            font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem;
+            margin-bottom: 1rem; border-bottom: 1px solid #3A415A;
+            padding-bottom: 0.5rem; color: #EAEAEA;
         }
-        .gradient-text {
-            /* ✅ GRADIENTE ATUALIZADO COM AS CORES DO TEMA */
-            background: linear-gradient(to right, #26C6DA, #D03D88);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        .policy-content p, .policy-content li { margin-bottom: 1rem; line-height: 1.75; }
+        .policy-content a { color: #26C6DA; text-decoration: underline; }
+        .policy-content ul { list-style-type: disc; list-style-position: inside; }
+        .policy-content strong { color: #EAEAEA; }
     </style>
 </head>
-<body class="bg-neon-bg text-neon-text antialiased">
+<body class="bg-neon-bg text-neon-text-secondary antialiased">
 
-    <header class="container mx-auto px-6 py-12 text-center">
-        <img src="icon.png" alt="Ícone do FlowDots" class="w-24 h-24 mx-auto mb-6 rounded-3xl shadow-lg">
-        <h1 class="text-5xl md:text-7xl font-black gradient-text">FlowDots</h1>
-        <p class="mt-4 text-lg md:text-xl text-neon-text-secondary">Conecte os pontos, preencha o tabuleiro. Um desafio para sua mente.</p>
-        <div class="mt-8">
-            <a href="https://play.google.com/store/apps/details?id=net.glaucomv.flowdots" class="bg-neon-primary hover:bg-opacity-80 text-black font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 inline-block">
-                Baixe na Google Play
+    <div class="container mx-auto px-6 py-12 max-w-4xl">
+        <h1 class="text-4xl font-bold text-neon-text text-center mb-8">Política de Privacidade e Termos de Uso do FlowDots</h1>
+        
+        <div class="bg-neon-surface p-8 md:p-12 rounded-xl policy-content border border-gray-700">
+            <p><strong>Última atualização:</strong> 18 de agosto de 2025</p>
+
+            <p>Sua privacidade e a transparência sobre como o FlowDots funciona são prioridades para nós. Este documento explica quais informações coletamos, como as utilizamos e quais são os termos que você aceita ao usar os recursos do nosso aplicativo, especialmente as funcionalidades da comunidade.</p>
+
+            <h2>Dados que Coletamos</h2>
+            <p>O FlowDots oferece duas experiências: offline e online (Comunidade).</p>
+            <p><strong>Para a experiência offline:</strong></p>
+            <p>Nós não coletamos nenhuma informação de identificação pessoal. Os únicos dados gerenciados são salvos exclusivamente no seu dispositivo e nunca são enviados para nós:</p>
+            <ul>
+                <li>Seu progresso de jogo (níveis concluídos, conquistas, inventário de dicas/diamantes).</li>
+                <li>Suas configurações de preferência (música, som e vibração).</li>
+            </ul>
+
+            <p><strong>Para a experiência online (Recursos da Comunidade):</strong></p>
+            <p>Para acessar o Estúdio Criativo, jogar níveis da comunidade e participar dos placares de líderes, é necessário criar uma conta. Ao fazer isso, coletamos e armazenamos as seguintes informações usando os serviços do Firebase:</p>
+            <ul>
+                <li><strong>Informações da sua Conta Google:</strong> Utilizamos o Firebase Authentication para login, que nos dá acesso ao seu nome, endereço de e-mail e foto de perfil, usados para identificar sua conta.</li>
+                <li><strong>ID de Usuário (UID):</strong> Um identificador único para sua conta, fornecido pelo Firebase.</li>
+                <li><strong>Nome de Usuário (Nick):</strong> O nome público que você escolhe para ser exibido no jogo.</li>
+                <li><strong>Dados de Atividade:</strong> Níveis que você criou, seus favoritos, seus recordes e progresso nos placares de líderes.</li>
+            </ul>
+            <p>Esses dados são essenciais para o funcionamento dos recursos online, como atribuir a autoria dos níveis que você cria e exibir seu nome nos rankings.</p>
+            
+            <h2>Conteúdo Gerado pelo Usuário (Níveis da Comunidade)</h2>
+            <p>O FlowDots permite que você crie e compartilhe seus próprios níveis ("Conteúdo Gerado pelo Usuário" ou "CGU"). Ao publicar um nível no Hub da Comunidade, você concorda com os seguintes termos:</p>
+            <ul>
+                <li><strong>Licença de Uso:</strong> Você mantém os direitos sobre sua criação. No entanto, ao publicá-la, você concede ao FlowDots (ByteFlow Studios) uma licença perpétua, irrevogável, mundial, não exclusiva e isenta de royalties para usar, hospedar, exibir, modificar, distribuir e reproduzir seu nível dentro do ecossistema do FlowDots e para fins promocionais do jogo. Isso nos permite mostrar seu nível para outros jogadores.</li>
+                <li><strong>Moderação e Promoção:</strong> Reservamo-nos o direito de revisar, moderar ou remover qualquer conteúdo que viole nossos padrões da comunidade. Os níveis que se destacam pela qualidade e popularidade podem ser "promovidos" por nossa equipe, ganhando maior visibilidade no jogo.</li>
+                <li><strong>Política de Exclusão:</strong> Você pode remover os níveis que publicou a qualquer momento através da tela "Minhas Contribuições". No entanto, para garantir a estabilidade e a consistência da experiência para todos os jogadores, os níveis que foram **promovidos** pela equipe FlowDots não poderão ser excluídos por você.</li>
+            </ul>
+
+            <h2>Serviços de Terceiros</h2>
+            <p>Para operar, o FlowDots utiliza serviços de terceiros confiáveis, principalmente do Google:</p>
+            <ul>
+                <li><strong>Firebase (Authentication e Firestore):</strong> Usado para gerenciar as contas de usuário e armazenar os dados da comunidade (perfis, níveis, etc.) de forma segura.</li>
+                <li><strong>Google AdMob:</strong> Para exibir anúncios na versão gratuita do jogo.</li>
+                <li><strong>Google Play Billing:</strong> Para processar compras no aplicativo de forma segura.</li>
+            </ul>
+            <p>Esses serviços possuem suas próprias políticas de privacidade. Recomendamos a leitura da <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.</p>
+
+            <h2>Privacidade das Crianças</h2>
+            <p>Os recursos online do FlowDots não são destinados a crianças menores de 13 anos. A criação de contas é restrita a usuários com idade para consentir com o processamento de seus dados pessoais em seu país de residência.</p>
+
+            <h2>Alterações a Esta Política e Termos</h2>
+            <p>Podemos atualizar este documento periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova versão nesta página e atualizando a data de "Última atualização".</g>
+
+            <h2>Contato</h2>
+            <p>Se você tiver alguma dúvida sobre esta Política ou Termos, entre em contato conosco pelo e-mail: <strong><a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></strong></p>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="index.html" class="text-neon-primary hover:text-opacity-80">
+                &larr; Voltar para a página inicial
             </a>
         </div>
-    </header>
-
-    <main class="container mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-3 gap-12 text-center">
-            <div class="bg-neon-surface p-8 rounded-xl border border-gray-700">
-                <div class="text-4xl text-neon-primary mb-4">🧠</div>
-                <h3 class="text-2xl font-bold mb-2">Desafie sua Lógica</h3>
-                <p class="text-neon-text-secondary">Centenas de níveis, do fácil ao expert, para testar suas habilidades de resolução de quebra-cabeças.</p>
-            </div>
-            <div class="bg-neon-surface p-8 rounded-xl border border-gray-700">
-                <div class="text-4xl text-neon-accent mb-4">🎨</div>
-                <h3 class="text-2xl font-bold mb-2">Desafios Temáticos</h3>
-                <p class="text-neon-text-secondary">Níveis especiais com desenhos e temas de datas comemorativas para manter o jogo sempre novo e divertido.</p>
-            </div>
-            <div class="bg-neon-surface p-8 rounded-xl border border-gray-700">
-                <div class="text-4xl text-amber-400 mb-4">✨</div>
-                <h3 class="text-2xl font-bold mb-2">Visual Minimalista</h3>
-                <p class="text-neon-text-secondary">Uma experiência de jogo limpa e relaxante, com cores vibrantes e animações suaves.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="text-center py-8 px-6 border-t border-neon-surface">
-        <p class="text-gray-500">&copy; 2025 ByteFlow Studios. Todos os direitos reservados.</p>
-        <a href="privacy_policy.html" class="text-neon-primary hover:text-opacity-80 mt-2 inline-block">
-            Política de Privacidade
-        </a>
-    </footer>
+    </div>
 
 </body>
 </html>
